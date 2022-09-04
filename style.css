@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: Verdana !important;
+    transition: .5s;
+}
+input{
+    font-family: Verdana !important;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: rgb(61, 58, 58);
+    padding: 10px 50px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+.footer .topFooter .logo,
+.header .logo{
+    /* background: rgb(25, 51, 202); */
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: 900;
+}
+.footer .topFooter .logo span,
+.header .logo span{
+    color:coral;
+}
+
+.footer .topFooter .logo:hover,
+.header .logo:hover{
+    background: #fff;
+    color: rgb(61, 58, 58);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    margin-right: 20px;
+    font-size: 18px;
+   
+}
+.menu li a{
+    transition: .5s;
+     color: #fff;
+     border-bottom: 1px solid transparent;
+     padding: 5px 10px;
+     border-radius: 4px;
+}
+.menu li a:hover{
+    background: coral
+}
+.menu li:last-child{
+    margin-right: 0px;
+}
+.header .search input{
+    width: 300px;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid coral;
+    color: #fff;
+    font-size: 15px;
+    transition: .5s;
+}
+.header .search input::placeholder{
+    color: #fff;
+}
+input:focus,
+input:active{
+    background: coral;
+    color: #fff !important;
+}
+.footer{
+    background: rgb(61, 58, 58);
+    padding: 20px 50px;
+}
+.footer .topFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottomFooter{
+    text-align: center;
+    color: #fff;
+}
+.bottomFooter span{
+    color: coral;
+}
+.content{
+    padding: 0 50px;
+    padding-top: 100px;
+}
+.content .cards_air{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .cards_air .card{
+    width: 300px;
+    overflow: hidden;
+    margin: 30px;
+}
+.content .cards_air .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+.content .cards_air .card h2{
+    color: rgb(61, 58, 58);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.content .cards_air .card .card_content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content .cards_air .card .card_content span:last-child{
+    color: coral;
+}
+.content .cards_air .card .card_content span:first-child{
+    color: rgb(61, 58, 58);
+}
+.head_col{
+    color: coral;
+    line-height: 200%;
+    padding-bottom: 5px;
+    border-bottom: 3px solid coral;
+}
+.search_main input{
+    width: 600px;
+    padding: 10px 25px;
+    border: 2px solid coral;
+    border-radius: 10px;
+    color: coral;
+    font-size: 17px;
+}
+.search_main{
+    margin-bottom: 60px;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+}
+.search_main input::placeholder{
+    color: coral;
+}
+.input_main_subm{
+    position: absolute;
+    width: 150px !important;
+    transform: translateX(450px);
+    background: coral;
+    color: #fff !important;
+}
+.input_main_input::placeholder{
+    color: coral !important;
+}
+.input_main_input{
+    color: coral;
+}
+.login{
+    margin-top: 50px;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column
+}
+.login input{
+    padding: 15px 30px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid coral;
+    color: coral;
+    font-size: 16px;
+}
+.login input::placeholder{
+    color: coral;
+}
+.login input:last-child{
+    background: coral;
+    color: #fff;
+}
+.infoProfile h2{
+    color: rgb(61, 58, 58);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.infoProfile .dataUser{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.infoProfile .dataUser span:last-child{
+    color: coral;
+}
+.infoProfile .dataUser span button{
+    padding: 5px 15px;
+    background: coral;
+    border: none;
+    border-radius: 4px;color: #fff
+}
+.infoProfile .dataUser button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid coral;
+    background: #fff;
+    color: coral;
+}
+
+.addRace{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.addRace ul li{
+    margin-right: 30px;
+}
+.addRace ul li a{
+    color: coral;
+    margin-right: 30px;
+}
+.infoProfile .dataUser button:hover{
+    background: coral;
+    color: #fff;
+}
+.seat_head{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.seat{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.seat span{
+    padding: 10px 15px;
+    margin: 10px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid coral;
+    color: coral;
+}
+.seat span:hover{
+    color: #fff;
+    cursor: pointer;
+    background: coral;
+}
+.seat span.active{
+    color: #fff;
+    background: coral;
+}
+.add_seat{
+    border: 2px solid coral;
+    padding: 10px 20px;
+    color: coral;
+    font-size: 18px;
+    color: corals;border-radius: 4px;
+    background: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.add_seat:hover{
+    color: #fff;
+    background: coral;
+}
+.add_race_bron{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.add_race_bron input,
+.add_race_bron select,
+.add_race_bron button{
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid coral;
+    margin-top: 15px;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    color: coral;
+}
+.add_race_bron input::placeholder{
+    color: coral;
+}
+.add_race_bron button,
+.add_race_bron input[type="submit"]{
+    background: coral;
+    color: #fff;
+}
+.add_race_bron button{
+    background: transparent;
+    color: coral;
+}
+.edit_race{
+    display: flex;
+    flex-direction: column;
+}
+.edit_race button{
+    padding: 10px 15px;
+    border: 2px solid coral;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    background: transparent;
+    color: coral;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.edit_race button:hover{
+    color: #fff;background: coral;
+}
+
+
+@media (max-width: 800px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+    }
+    .content{
+        padding: 0 30px;
+        padding-top: 170px;
+    }
+    .header ul li{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .header .search{
+        margin-top: 10px;
+    }
+    .footer{
+        padding: 20px 30px;
+    }
+    .search_main input{
+        max-width: 600px !important;
+        width: 100% !important;
+    }
+    .input_main_subm{
+        margin-top: 10px;
+        position: relative;
+        transform: translateX(0);
+    }
+    .search_main{
+        flex-direction: column;
+    }
+    .addRace ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .addRace ul li{
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .addRace ul li a{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px){
+    .header{
+        padding: 10px 20px;
+    }
+    .content{
+        padding: 0 20px;
+        padding-top: 170px;
+    }
+    .footer{
+        padding: 20px 20px;
+    }
+}
+@media (max-width: 500px){
+    .header{
+        padding: 10px 10px;
+    }
+    .content{
+        padding: 0 10px;
+        padding-top: 170px;
+    }
+    .footer{
+        padding: 20px 10px;
+    }
+    .footer div{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
